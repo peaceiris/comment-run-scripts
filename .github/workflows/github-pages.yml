@@ -15,6 +15,7 @@ jobs:
         run: ./build-scripts.bash 
 
       - name: Deploy to GitHub Pages
+        if: github.event.repository.fork == false
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
