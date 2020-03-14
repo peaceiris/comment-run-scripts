@@ -19,7 +19,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         # if: github.event.repository.fork == false
-        uses: peaceiris/actions-gh-pages@v3.5.4-3
+        uses: peaceiris/actions-gh-pages@v3.5.4-4
         with:
           # github_token: ${{ secrets.GITHUB_TOKEN }}
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
