@@ -21,7 +21,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.5.4-6
         with:
           # github_token: ${{ secrets.GITHUB_TOKEN }}
-          # deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./dist
           allow_empty_commit: true
